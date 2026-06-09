@@ -1,0 +1,55 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Background -->
+    <rect width="512" height="512" rx="120" fill="#0B0F14"/>
+
+    <!-- Glow -->
+    <circle cx="256" cy="180" r="140" fill="url(#glow)" opacity="0.18"/>
+
+    <!-- Main Symbol -->
+    <path
+            d="M140 150L256 370L372 150"
+            stroke="url(#primaryGradient)"
+            stroke-width="34"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+    />w
+
+    <!-- Inner Dynamic Curve -->
+    <path
+            d="M196 200C220 245 245 278 256 300C268 278 292 245 316 200"
+            stroke="url(#secondaryGradient)"
+            stroke-width="18"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            opacity="0.95"
+    />
+
+    <!-- Top Accent -->
+    <circle cx="256" cy="122" r="14" fill="#7CF7D4"/>
+
+    <!-- Definitions -->
+    <defs>
+
+        <!-- Main Gradient -->
+        <linearGradient id="primaryGradient" x1="140" y1="150" x2="372" y2="370" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5EEAD4"/>
+            <stop offset="0.5" stop-color="#60A5FA"/>
+            <stop offset="1" stop-color="#A78BFA"/>
+        </linearGradient>
+
+        <!-- Inner Gradient -->
+        <linearGradient id="secondaryGradient" x1="196" y1="200" x2="316" y2="300" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2E8F0"/>
+            <stop offset="1" stop-color="#94A3B8"/>
+        </linearGradient>
+
+        <!-- Ambient Glow -->
+        <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(256 180) rotate(90) scale(140)">
+            <stop stop-color="#60A5FA"/>
+            <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+        </radialGradient>
+
+    </defs>
+</svg>

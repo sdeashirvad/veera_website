@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Veera</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="../assets/images/icon.png" alt="Veera Home" class="logo-image" />
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <p>For support or feedback, please email us at <a href="mailto:ashirvadpandey1@gmail.com">ashirvadpandey1@gmail.com</a> or use the form below.</p>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Veera</p>
+            <p>An independent product by <a href="https://ashirvad.work" target="_blank" rel="noopener noreferrer">SDEAshirvad Labs</a>.</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/contact/">Contact</a>
+            <a href="/delete-data/">Delete Data</a>
+        </nav>
+    </footer>
+</body>
+</html>
