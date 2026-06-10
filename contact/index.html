@@ -6,6 +6,7 @@
     <title>Contact Us - Veera</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
         <h1>Contact Us</h1>
         <p>For support or feedback, please email us at <a href="mailto:ashirvadpandey1@gmail.com">ashirvadpandey1@gmail.com</a> or use the form below.</p>
 
-        <form class="contact-form">
+        <form id="contact-form" class="contact-form">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -46,6 +47,7 @@
             </div>
             <button type="submit" class="submit-button">Send Message</button>
         </form>
+        <p id="form-status"></p>
 
     </main>
     <footer>
@@ -59,5 +61,6 @@
             <a href="/delete-data/">Delete Data</a>
         </nav>
     </footer>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -47,8 +48,7 @@
     <main>
         <section id="hero">
             <h1>Fitness tracking that adapts to your body.</h1>
-            <p>Know exactly how your body is changing.</p>
-            <a href="#cta">Join Early Access</a>
+            <p>Know exactly how your body is changing. <a href="#" class="cta-link">Join Early Access</a>.</p>
         </section>
 
         <section id="value-proposition">
@@ -114,7 +114,7 @@
 
         <section id="cta">
             <h2>Start Your Transformation Journey</h2>
-            <a href="#">Get Launch Updates</a>
+            <a href="#" class="cta-button">Get Launch Updates</a>
         </section>
     </main>
 
@@ -129,6 +129,22 @@
             <a href="/delete-data/">Delete Data</a>
         </nav>
     </footer>
+
+    <div id="early-access-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button id="close-modal" class="close-button">&times;</button>
+            <h2>Join the Waitlist</h2>
+            <p>Be the first to know when Veera is available. Get early access and exclusive updates.</p>
+            <form id="early-access-form">
+                <div class="form-group">
+                    <label for="modal-email">Email Address</label>
+                    <input type="email" id="modal-email" name="email" required>
+                </div>
+                <button type="submit" class="submit-button">Join Now</button>
+            </form>
+            <p id="modal-form-status"></p>
+        </div>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
